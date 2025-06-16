@@ -4,6 +4,9 @@
 \usepackage[default]{raleway}
 \usepackage[margin=1cm, a4paper]{geometry}
 
+% % Emoji usage
+% \newfontface\emojifont{Segoe UI Emoji}[Renderer=Harfbuzz]
+
 
 %------------------------------------------------------------------ Variablen
 
@@ -34,7 +37,7 @@
     \bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Mike De Decker}
 }{
     \bg{headerfontbox}{headerfontboxfont}{\large Pirate}
-}{profile-picture}{headerblue}{3.5cm}{2cm}
+}{picture-of-me}{headerblue}{3.5cm}{2cm}
 
 
 
@@ -134,9 +137,9 @@
 \begin{tabular}{r| p{0.4\textwidth} c}
     \cvevent{2025}{Software Developer}{Student job}{University of applied Arts \& Sciences, Ghent \color{cvred}}{Building a prototype for the license managing platform, so that people can be added to a license, for a given time and reason, without long lasting licenses being upheld.}{img/hogeschool_gent_logo.jpeg} \\
     \cvevent{2023}{Software Developer}{Internship}{Cashplannr, Ghent \color{cvred}}{Assist coding the webapplication, both front-end (Vue3) and back-end (PHP)}{img/cashplannr.jpeg} \\    
-    \cvevent{2024, 2023, 2022}{Administrative work}{Student job}{Buggenhout \color{cvred}}{Writing documentation \& procedures on how to operate, perform periodical cleaning or periodical maintenance on machines.}{img/bosteels.jpeg} \\
+    \cvevent{2024, 2023, 2022}{Administrative work}{Student job}{Bosteels Brewery Buggenhout \color{cvred}}{Writing documentation \& procedures on how to operate, perform periodical cleaning or periodical maintenance on machines.}{img/bosteels.jpeg} \\
     \cvevent{2019}{Student packer}{Student job}{Buggenhout \color{cvred}}{Ontex BVBA - Packing of products}{img/ontex_logo.jpeg} \\
-    \cvevent{2018}{Student worker general work}{Student}{Dendermonde \color{cvred}}{General work}{img/tarkett.jpeg}
+    \cvevent{2018}{Student worker general work}{Student job}{Dendermonde \color{cvred}}{General work}{img/tarkett.jpeg}
 \end{tabular}
 
 \vspace{4em}
@@ -144,53 +147,53 @@
 \begin{minipage}[t]{0.4\textwidth}
 \section*{Degrees}
 \begin{tabular}{r p{0.6\textwidth} c}
-    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{img/tarkett.jpeg} \\
-    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{img/tarkett.jpeg} \\
-    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{img/tarkett.jpeg}
+    \cvdegree{2025}{Bachelor of Applied Information Technology}{}{University of Applied Sciences and Arts, Ghent \color{headerblue}}{}{img/hogeschool_gent_logo.jpeg} \\
+    \cvdegree{2023}{Graduate in Programming}{}{University of Applied Sciences and Arts, Ghent \color{headerblue}}{}{img/hogeschool_gent_logo.jpeg} \\
+    \cvdegree{2021}{Bachelor of Science in Mathematics}{}{Ghent University \color{headerblue}}{}{img/ghent_university_logo.jpeg}
 \end{tabular}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.16\textwidth}
 \section*{Hobbies}
 % usage \hobbyicon{<fontawesome icon}{Text}{background color of circle}{size of icon}{space text below icon}
-\hobbyicon{\color{iconcolour}\faFlask}{Rhum}{cvgreen}{\iconsize}{2em} \hfill
-\hobbyicon{\color{iconcolour}\faBook}{The Code}{cvorange}{\iconsize}{2em}
+{\centering \hobbyicon{\color{iconcolour}\faGroup}{Jump\\Rope}{cvgreen}{\iconsize}{2em}}
+{\centering \hobbyicon{\color{iconcolour}\faCode}{Digital\\Adventure}{cvorange}{\iconsize}{2em}}
 
-\hobbyicon{\color{iconcolour}\faComment}{Parler}{cvpurple}{\iconsize}{2em} \hspace{1em}
-\hobbyicon{\color{iconcolour}\faBeer}{Beer}{headerblue}{\iconsize}{2em}
+% \hobbyicon{\color{iconcolour}\faComment}{Parler}{cvpurple}{\iconsize}{2em} \hspace{1em}
+% \hobbyicon{\color{iconcolour}\faBeer}{Beer}{headerblue}{\iconsize}{2em}
 \end{minipage}
 
 \vspace{4em}
 
-\begin{minipage}[t]{0.3\textwidth}
-\section*{Certificates \& Grants}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
-    1708 & Captain's Certificates \\
-    1710 & Travel grant \\
-    1715--1716 & Grant from the Pirate's Company
-\end{tabular}
-\section*{Strenghts}
-\cvtag{honest}
-\cvtag{thieving}
-\cvtag{handsome}
-\section*{References}
-\cvkeyword{Will Turner}{cvgreen}{iconcolour}
-\cvkeyword{Barbossa}{cvgreen}{iconcolour} \\
+% \begin{minipage}[t]{0.3\textwidth}
+% \section*{Certificates \& Grants}
+% \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+%     1708 & Captain's Certificates \\
+%     1710 & Travel grant \\
+%     1715--1716 & Grant from the Pirate's Company
+% \end{tabular}
+% \section*{Strenghts}
+% \cvtag{honest}
+% \cvtag{thieving}
+% \cvtag{handsome}
+% \section*{References}
+% \cvkeyword{Will Turner}{cvgreen}{iconcolour}
+% \cvkeyword{Barbossa}{cvgreen}{iconcolour} \\
 
-\cvkeyword{possibly Mr. Swan}{headerblue}{iconcolour}
-\end{minipage}\hfill
+% \cvkeyword{possibly Mr. Swan}{headerblue}{iconcolour}
+% \end{minipage}\hfill
+
+
 \begin{minipage}[t]{0.3\textwidth}
 \section*{Publications}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
-    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
-    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
+    2025 & \emph{AI judge for recognition of jump rope
+skills in videos.}, (Comming soon on: \href{https://www.hogent.be/student/bibliotheken/}{Hogent catalogue}). \\
 \end{tabular}
 \section*{Talks}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
     Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
 \end{tabular}
 \end{minipage}
-
-
 
 
 
@@ -206,7 +209,7 @@
 \setlength{\parindent}{0pt}
 \begin{minipage}[t]{\rightcolwidth}
 \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-{\small Jack Sparrow \icon{\faEnvelopeO}{cvpurple}{} The Black Pearl \icon{\faMapMarker}{cvpurple}{} Tortuga \icon{\faPhone}{cvpurple}{} 0099/333 5647380 \newline\icon{\faAt}{cvpurple}{} \protect\url{jack@sparrow.com}
+{\small Mike De Decker \icon{\faEnvelopeO}{cvpurple}{} mikeddecker@hotmail.com \icon{\faMapMarker}{cvpurple}{} Dendermonde \icon{\faPhone}{cvpurple}{} +32 478 09 08 59 \newline\icon{\faAt}{cvpurple}{} \protect\url{https://mikeddecker.github.io/}
 }
 \end{center}
 \end{minipage}
