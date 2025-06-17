@@ -12,8 +12,8 @@
 
 \newlength{\rightcolwidth}
 \newlength{\leftcolwidth}
-\setlength{\leftcolwidth}{0.25\textwidth}
-\setlength{\rightcolwidth}{0.70\textwidth}
+\setlength{\leftcolwidth}{0.26\textwidth}
+\setlength{\rightcolwidth}{0.72\textwidth}
 
 %------------------------------------------------------------------
 \title{Hipster-CV}
@@ -45,9 +45,9 @@
 
 % hier muss die "unsichtbare" Überschrift rein, weil er sonst nicht die Paracols startet... komisch...
 \subsection*{}
-% \vspace{1em}
+\vspace{2em}
 
-\setlength{\columnsep}{1.5cm}
+\setlength{\columnsep}{1cm}
 \columnratio{0.3}[0.65]
 \begin{paracol}{2}
 \hbadness5000
@@ -153,6 +153,7 @@
     \cvdegree{2021}{Bachelor of Science in Mathematics}{}{Ghent University \color{headerblue}}{}{img/ghent_university_logo.jpeg}
 \end{tabular}
 \end{minipage}% (keep the % to render side by side)
+\hspace{\fill}% Automatic flexible space
 \begin{minipage}[t]{0.30\rightcolwidth}
 \section*{Hobbies}
 % usage \hobbyicon{<fontawesome icon}{Text}{background color of circle}{size of icon}{space text below icon}
@@ -175,21 +176,37 @@
 \cvkeyword{Thomas Hysselinckx}{Cashplannr}{cvgreen}{iconcolour} \\
 \cvkeyword{Davina Luyten / Dirk Haex}{Belnet}{cvgreen}{iconcolour} \\
 \cvkeyword{Sarah Cools}{Bosteels}{headerblue}{iconcolour}
-\end{minipage}
-\begin{minipage}[t]{0.31\rightcolwidth}
+\end{minipage}%
+\hspace{\fill}% Automatic flexible space
+\begin{minipage}[t]{0.29\rightcolwidth}
+% Publications and Talks side-by-side layout
 \section*{Publications}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
-    2025 & \emph{AI judge for recognition of jump rope
-skills in videos.}, (Comming: \href{https://www.hogent.be/student/bibliotheken/}{Hogent catalogue}). \\
+\begin{tabular}{@{}>{\footnotesize\bfseries}r @{}}
+2025 \\[0.5ex]
 \end{tabular}
-\end{minipage}
-\begin{minipage}[t]{0.31\rightcolwidth}
+\begin{tabular}{@{}p{0.29\rightcolwidth}@{}}
+\emph{AI judge for recognition of jump rope skills in videos.}, \\
+(Coming: \href{https://www.hogent.be/student/bibliotheken/}{Hogent catalogue}). \\
+\end{tabular}
+\end{minipage}%
+\hspace{\fill}% Automatic flexible space
+\begin{minipage}[t]{0.29\rightcolwidth}
 \section*{Talks}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
-    June 2025 & ``AI judge for recognition of jump rope
-skills in videos.'', at: \emph{TNC25} in Brighton, June 2025. Sponsored by Belnet
+\begin{tabular}{@{}>{\footnotesize\bfseries}r @{}}
+June 2025 \\[0.5ex]
+\end{tabular}
+\begin{tabular}{@{}p{0.29\rightcolwidth}@{}}
+``AI judge for recognition of jump rope skills in videos.'', \\
+at: \emph{TNC25} in Brighton, June 2025. Sponsored by Belnet \\
 \end{tabular}
 \end{minipage}\hfill
+% \begin{tabular}{@{}>{\footnotesize\bfseries}r @{}}
+% June 2025 \\[0.5ex]
+% \end{tabular}
+% \begin{tabular}{@{}p{0.31\rightcolwidth}@{}}
+% ``AI judge for recognition of jump rope skills in videos.'', \\
+% at: \emph{TNC25} in Brighton, June 2025. Sponsored by Belnet \\
+% \end{tabular}
 
 
 \begin{minipage}[t]{0.48\rightcolwidth}
