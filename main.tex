@@ -12,8 +12,8 @@
 
 \newlength{\rightcolwidth}
 \newlength{\leftcolwidth}
-\setlength{\leftcolwidth}{0.3\textwidth}
-\setlength{\rightcolwidth}{0.65\textwidth}
+\setlength{\leftcolwidth}{0.25\textwidth}
+\setlength{\rightcolwidth}{0.70\textwidth}
 
 %------------------------------------------------------------------
 \title{Hipster-CV}
@@ -32,11 +32,11 @@
 
 
 \header{
-    \bg{headerfontbox}{headerfontboxfont}{Captain}
+    % \bg{headerfontbox}{headerfontboxfont}{Captain}
 }{
     \bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Mike De Decker}
 }{
-    \bg{headerfontbox}{headerfontboxfont}{\large Pirate}
+    % \bg{headerfontbox}{headerfontboxfont}{\large Pirate}
 }{picture-of-me}{headerblue}{3.5cm}{2cm}
 
 
@@ -45,7 +45,7 @@
 
 % hier muss die "unsichtbare" Überschrift rein, weil er sonst nicht die Paracols startet... komisch...
 \subsection*{}
-\vspace{4em}
+% \vspace{1em}
 
 \setlength{\columnsep}{1.5cm}
 \columnratio{0.3}[0.65]
@@ -74,7 +74,7 @@
 
 \bg{cvgreen}{white}{Areas of specialization} \\
 
-(Web)applications ~•~ Computer vision ~•~ Data
+(Web)applications ~•~ Computer vision ~•~ Data analysis
 
 \bigskip
 
@@ -101,11 +101,11 @@
 
 \bg{cvgreen}{white}{IT \& programming} \\
 
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.95\leftcolwidth}
 \begin{tabular}{r @{\hspace{0.5em}}l}
      \bg{skilllabelcolour}{iconcolour}{SQL}             & \barrule{0.38}{0.5em}{cvpurple}\\
      \bg{skilllabelcolour}{iconcolour}{\LaTeX}          & \barrule{0.27}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{computer vision} & \barrule{0.42}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{{\tiny Computer vision}} & \barrule{0.42}{0.5em}{cvpurple} \\
      \bg{skilllabelcolour}{iconcolour}{python}          & \barrule{0.42}{0.5em}{cvpurple} \\
      \bg{skilllabelcolour}{iconcolour}{Vue3}            & \barrule{0.40}{0.5em}{cvpurple} \\
      \bg{skilllabelcolour}{iconcolour}{C\#, Java}       & \barrule{0.30}{0.5em}{cvpurple} \\
@@ -119,8 +119,9 @@
 
 
 \bigskip
+\medskip
 
-\scalebox{0.7}{
+\scalebox{0.68}{
 \iconcross{\Huge}{white}{cvred}{\color{black!30}\faBook}{\href{mailto:mikeddecker@hotmail.com}{\faEnvelopeO}}{\faPhone}{\href{https://github.com/mikeddecker/}{\faCode}}
 }
 
@@ -142,57 +143,56 @@
     \cvevent{2018}{Student worker general work}{Student job}{Dendermonde \color{cvred}}{General work}{img/tarkett.jpeg}
 \end{tabular}
 
-\vspace{4em}
+\vspace{1em}
 
-\begin{minipage}[t]{0.4\textwidth}
+\begin{minipage}[t]{0.62\rightcolwidth}
 \section*{Degrees}
-\begin{tabular}{r p{0.6\textwidth} c}
+\begin{tabular}{r p{0.30\rightcolwidth} c}
     \cvdegree{2025}{Bachelor of Applied Information Technology}{}{University of Applied Sciences and Arts, Ghent \color{headerblue}}{}{img/hogeschool_gent_logo.jpeg} \\
     \cvdegree{2023}{Graduate in Programming}{}{University of Applied Sciences and Arts, Ghent \color{headerblue}}{}{img/hogeschool_gent_logo.jpeg} \\
     \cvdegree{2021}{Bachelor of Science in Mathematics}{}{Ghent University \color{headerblue}}{}{img/ghent_university_logo.jpeg}
 \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.16\textwidth}
+\end{minipage}% (keep the % to render side by side)
+\begin{minipage}[t]{0.30\rightcolwidth}
 \section*{Hobbies}
 % usage \hobbyicon{<fontawesome icon}{Text}{background color of circle}{size of icon}{space text below icon}
 {\centering \hobbyicon{\color{iconcolour}\faGroup}{Jump\\Rope}{cvgreen}{\iconsize}{2em}}
 {\centering \hobbyicon{\color{iconcolour}\faCode}{Digital\\Adventure}{cvorange}{\iconsize}{2em}}
 
-% \hobbyicon{\color{iconcolour}\faComment}{Parler}{cvpurple}{\iconsize}{2em} \hspace{1em}
-% \hobbyicon{\color{iconcolour}\faBeer}{Beer}{headerblue}{\iconsize}{2em}
+\section*{Strenghts}
+\cvtag{problem solving}
+\cvtag{eager to learn}
+\cvtag{driven}
+\cvtag{integrity}
+\cvtag{adaptability}
+\cvtag{teamwork}
+\end{minipage}\hfill
+
+\vspace{1em}
+
+\begin{minipage}[t]{0.30\rightcolwidth}
+\section*{References}
+\cvkeyword{Thomas Hysselinckx}{Cashplannr}{cvgreen}{iconcolour} \\
+\cvkeyword{Davina Luyten / Dirk Haex}{Belnet}{cvgreen}{iconcolour} \\
+\cvkeyword{Sarah Cools}{Bosteels}{headerblue}{iconcolour}
 \end{minipage}
-
-\vspace{4em}
-
-% \begin{minipage}[t]{0.3\textwidth}
-% \section*{Certificates \& Grants}
-% \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
-%     1708 & Captain's Certificates \\
-%     1710 & Travel grant \\
-%     1715--1716 & Grant from the Pirate's Company
-% \end{tabular}
-% \section*{Strenghts}
-% \cvtag{honest}
-% \cvtag{thieving}
-% \cvtag{handsome}
-% \section*{References}
-% \cvkeyword{Will Turner}{cvgreen}{iconcolour}
-% \cvkeyword{Barbossa}{cvgreen}{iconcolour} \\
-
-% \cvkeyword{possibly Mr. Swan}{headerblue}{iconcolour}
-% \end{minipage}\hfill
-
-
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.31\rightcolwidth}
 \section*{Publications}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
     2025 & \emph{AI judge for recognition of jump rope
-skills in videos.}, (Comming soon on: \href{https://www.hogent.be/student/bibliotheken/}{Hogent catalogue}). \\
+skills in videos.}, (Comming: \href{https://www.hogent.be/student/bibliotheken/}{Hogent catalogue}). \\
 \end{tabular}
+\end{minipage}
+\begin{minipage}[t]{0.31\rightcolwidth}
 \section*{Talks}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
-    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
+    June 2025 & ``AI judge for recognition of jump rope
+skills in videos.'', at: \emph{TNC25} in Brighton, June 2025. Sponsored by Belnet
 \end{tabular}
+\end{minipage}\hfill
+
+
+\begin{minipage}[t]{0.48\rightcolwidth}
 \end{minipage}
 
 
@@ -209,7 +209,10 @@ skills in videos.}, (Comming soon on: \href{https://www.hogent.be/student/biblio
 \setlength{\parindent}{0pt}
 \begin{minipage}[t]{\rightcolwidth}
 \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-{\small Mike De Decker \icon{\faEnvelopeO}{cvpurple}{} mikeddecker@hotmail.com \icon{\faMapMarker}{cvpurple}{} Dendermonde \icon{\faPhone}{cvpurple}{} +32 478 09 08 59 \newline\icon{\faAt}{cvpurple}{} \protect\url{https://mikeddecker.github.io/}
+{
+    \small Mike De Decker \icon{\faEnvelopeO}{cvpurple}{} mikeddecker@hotmail.com \icon{\faMapMarker}{cvpurple}{}
+    Dendermonde \\ \icon{\faPhone}{cvpurple}{} +32 478 09 08 59
+    \icon{\faAt}{cvpurple}{} \protect\url{https://mikeddecker.github.io/}
 }
 \end{center}
 \end{minipage}

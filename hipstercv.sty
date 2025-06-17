@@ -50,10 +50,19 @@
 \titlespacing{\section}{0pt}{12pt}{5pt} % Spacing around titles {<left spacing>}{<before spacing>}{<after spacing>}
 %----------------------------------------------------
 
- \newcommand{\cvkeyword}[3]{
- \colorbox{#2}{\textcolor{#3}{#1}} \phantom{}%
- }
- 
+% \newcommand{\cvkeyword}[4]{
+% \colorbox{#3}{\textcolor{#4}{#1\\(#2)}} \phantom{}%
+% }
+\newcommand{\cvkeyword}[4]{%
+  % \colorbox{#3}{%
+    \begin{minipage}[t]{\dimexpr\linewidth-2\fboxsep}%
+      {#1} {(#2)}%
+    \end{minipage}%
+  % }%
+  \vspace{0.5em}%
+}
+
+
 %------------------------
 \newcommand{\cvtag}[1]{% from alta-cv: https://www.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv
   \tikz[baseline]\node[draw=black!40,rounded corners,inner sep=0.4em]{\color{black!50}#1};
@@ -190,13 +199,13 @@
 % inspired by: https://www.sharelatex.com/templates/cv-or-resume/fancy-cv
 \newcommand{\header}[7]{
 \tikz[remember picture,overlay] {%
-\node[rectangle, fill=#5, anchor=north, minimum width=\paperwidth, minimum height=5cm](header) at (current page.north){};%
+\node[rectangle, fill=#5, anchor=north, minimum width=\paperwidth, minimum height=3cm](header) at (current page.north){};%
 \node[left=#7 of header.north, anchor=east](name) at (header.east) {\fontfamily{\sfdefault}\selectfont #2};%
 \node[anchor=south east](degree) at (name.north east) {\fontfamily{\sfdefault}\selectfont #1};%
 \node[anchor=north east](descr) at (name.south east) {\fontfamily{\sfdefault}\selectfont #3};%
 \node[right=#6 of header.west, anchor=west](picture) at (header.west) {};%
-\draw[path picture={\node[anchor=center] at (path picture bounding box.center){\includegraphics[height=4.3cm]{#4}} ;}] (picture) circle (2) ;}%
-\vspace{1.5cm}%
+\draw[path picture={\node[anchor=center] at (path picture bounding box.center){\includegraphics[height=2.7cm]{#4}} ;}] (picture) circle (1.2) ;}%
+\vspace{0.5cm}%
 }
 
 
